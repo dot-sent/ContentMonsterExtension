@@ -1,0 +1,11 @@
+div {
+    display: inline-block;
+    background-image: url(../icons/Quotes-logo-48.png);
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
+    min-height: 200px;
+    min-width: 200px;
+    outline: 0;
+    padding: 30px 30px 40px 20px;
+}
+

@@ -1,0 +1,63 @@
+{
+
+  "manifest_version": 2,
+  "name": "Content Monster NG",
+  "version": "0.1",
+  "default_locale": "en",
+  "author": "FlightGear.org community",
+  "homepage_url": "http://wiki.flightgear.org",
+
+  "description": "... just that: a content monster :-)",
+
+"applications": {
+  "gecko": {
+    "id": "content-monster@wiki.flightgear.org",
+    "strict_min_version": "42.0"
+  }
+},
+
+"permissions": [
+  "*://forum.flightgear.org/*", 
+  "*://sourceforge.net/p/flightgear/mailman/*",
+
+  "storage",
+  "tabs",
+  "activeTab",
+  "clipboardRead",
+  "clipboardWrite",
+  "unlimitedStorage",
+  "webRequest",
+  "downloads"
+],
+
+"options_ui": {
+  "page": "ui/options.html",
+  "browser_style": true
+},
+
+  "icons": {
+    "48": "icons/Quotes-logo-48.png"
+  },
+
+
+  "browser_action": {
+    "default_icon": "Quotes-logo-32.png",
+    "default_title": "Content Monster",
+    "browser_style": true
+  },
+
+"background": {
+  "scripts": ["background-script.js"]
+},
+
+  "content_scripts": [
+    {
+      "matches": [
+		"*://forum.flightgear.org/*", 
+		"*://sourceforge.net/p/flightgear/mailman/flightgear-devel/*",
+		"*://sourceforge.net/p/flightgear/mailman/message/*"],
+      "js": ["content-script.js"]
+    }
+  ]
+
+}

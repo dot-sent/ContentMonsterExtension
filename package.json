@@ -1,0 +1,21 @@
+{
+  "name": "contentMonster",
+  "version": "0.0.1",
+  "description": "headless/CLI mode (for CI)",
+  "main": "main-node.js",
+  "dependencies": {
+    "genetic-js": "^0.1.14",
+    "mediawiki": "^0.0.14",
+    "regex": "^0.1.1",
+    "synaptic": "^1.1.4",
+    "xmldom": "^0.1.27",
+    "xpath.js": "^1.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
